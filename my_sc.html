@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- 设置视口-->
+    <meta name="viewport" content="width=device-width,inital-scale=1"/>
+    <!-- 导入css-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/basic.css"/>
+    <!-- 导入js-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container p-0">
+<header>
+    <div class="BHeader">
+        <div class="yNavIndex ">
+            <ul class="breadcrumb   my_bg">
+                <li class="breadcrumb-item">
+                    <a href="wai_login.html" style="color:#ea4949;">请登录</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="wai_reg.html">免费注册</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="wai_dd.html">订单查询</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="my_sc.html">我的收藏</a>
+                </li>
+                <div class="dropdown">
+                    <!-- boot中通过自定义属性data-toggle来激活-->
+                    <button class="btn my_bg my_small border-0 dropdown-toggle" data-toggle="dropdown">我的商城</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="my_sc.html">我的收藏</a></li>
+                        <li><a href="#">账户安全</a></li>
+                        <li><a href="#">地址管理</a></li>
+                        <li><a href="#">我要评价</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </div>
+    </header>
+    <div class="container row  m-0 ">
+        <div class="header-logo f1 col-md-3 col-sm-12 p-0">
+            <h1>
+                <a href="wai_index.html">
+                    <img src="../theme/icon/logo.png" alt=""/>
+                    <a class="my_small" href="wai_index.html">返回首页</a>
+                </a>
+            </h1>
+        </div>
+        <div class="head-form fl col-md-7 col-sm-12 ml-5">
+            <div class="input-group w-100">
+                <input class="form-control p-0 border-danger in1" type="text" placeholder="请输入您要搜索的内容"/>
+                <a href="wai_class.html"><button class="button">搜索</button></a>
+            </div>
+            <div class="words-text  mt-2">
+                <a href="#" class="red">1元秒爆</a>
+                <a href="#">低至五折</a>
+                <a href="#">农用物资</a>
+                <a href="#">买一赠一</a>
+                <a href="#">佳能相机</a>
+                <a href="#">稻香村月饼</a>
+                <a href="#">服装城</a>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-12"></div>
+    </div>
+   <div class="containers ">
+       <div class="row">
+           <div class="col-md-2 col-sm-12">
+               <div class="sc_left">
+                   <p>手机悦商城</p>
+                   <div class="sc_member clearfix border border-secondary">
+                       <div class="row mx-0  p-2">
+                           <div class="col-md-5 col-sm-12 p-0">
+                               <img src="../theme/img/bg/mem.png" alt=""/>
+                           </div>
+                           <div class="col-md-7 col-sm-12 ">
+                               <p>用户名:</p>
+                               <a href="#">郁骨</a>
+                               <p>搜悦号:</p>
+                               <p>389323080</p>
+                           </div>
+                       </div>
+                     <h6 class="my_bg p-2">我的商城</h6>
+                       <p class="lp"><a href="#">我的订单</a></p>
+                       <p class="lp"><a href="#">我的收藏</a></p>
+                       <p class="lp"><a href="#">账号安全</a></p>
+                       <p class="lp"><a href="#">我的评价</a></p>
+                       <p class="lp"><a href="#">地址管理</a></p>
+                       <h6 class="my_bg p-2">客户服务</h6>
+                       <p class="lp"><a href="#">退货服务</a></p>
+                       <p class="lp"><a href="#">退货/退款记录</a></p>
+                       <h6 class="my_bg p-2">我的消息</h6>
+                       <p class="lp"><a href="#">商城快讯</a></p>
+                       <p class="lp"><a href="#">帮助中心</a></p>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-10 con-sm-12 mt-2 ">
+               <div class="cs_content">
+                   <div class="member-head ">
+                       <div class="row">
+                           <div class="col-md-2 col-sm-12 ">
+                               <h4 class="text-white">我的收藏</h4>
+                           </div>
+                           <div class="col-md-5 col-sm-12"></div>
+                           <div class="col-md-3 col-sm-12">
+                               <input type="text" class="w-75" placeholder="商品名称/商品编号/订单编号"/>
+                           </div>
+                           <div class="col-md-2 col-sm-12">
+                               <img src="../theme/icon/member-s.png" alt=""/>
+                               <a class="search text-white" href="#">搜索</a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="container border border-secondary">
+                       <ul class="nav nav-tabs ">
+                           <li class="nav-item "><a class=" nav-link" href="#tab1" data-toggle="tab">我收藏的商品</a></li>
+                           <li class="nav-item "><a class=" nav-link" href="#tab2" data-toggle="tab">我收藏的店铺</a></li>
+                       </ul>
+                       <!--   下层内容-->
+                       <div class="tab-content  clearfix">
+                           <div id="tab1" class="tab-pane active">
+                              <div class="row p-2">
+                                  <div class="col-md-2 col-sm-12   mt-2">
+                                      <img src="../theme/icon/y2.png" alt=""/>
+                                      <span class="my_small">全选</span>
+                                  </div>
+                                  <div class="col-md-2 col-sm-12 p-0">
+                                      <a href="#" class="btn btn-danger my_small">加入购物车</a>
+                                  </div>
+                                  <div class="col-md-2 col-sm-12">
+                                      <a href="#" class="btn btn-secondary my_small">删除商品</a>
+                                  </div>
+                                  <div class="col-md-6 col-sm-12"></div>
+                              </div>
+                               <div class="row p-3">
+                                   <div class="col-md-3 col-sm-12">
+                                       <img src="../theme/img/pd/hot2.png" alt=""/>
+                                       <p class="text-normal">
+                                           <img src="../theme/icon/y2.png" alt=""/>
+                                           <a href="#">小米 4 2GB内存版 白色 移动4G手机不锈钢金属边框、 5英寸屏窄边，工艺和手感</a> </p>
+                                       <p><span class="price text-normal">￥138.00</span></p>
+                                   </div>
+                                   <div class="col-md-3 col-sm-12">
+                                       <img src="../theme/img/pd/hot2.png" alt=""/>
+                                       <p class="text-normal">
+                                           <img src="../theme/icon/y1.png" alt=""/>
+                                           <a href="#">小米 4 2GB内存版 白色 移动4G手机不锈钢金属边框、 5英寸屏窄边，工艺和手感</a> </p>
+                                       <p><span class="price text-normal">￥138.00</span></p>
+                                   </div>
+                                   <div class="col-md-3 col-sm-12">
+                                       <img src="../theme/img/pd/hot2.png" alt=""/>
+                                       <p class="text-normal">
+                                           <img src="../theme/icon/y1.png" alt=""/>
+                                           <a href="#">小米 4 2GB内存版 白色 移动4G手机不锈钢金属边框、 5英寸屏窄边，工艺和手感</a> </p>
+                                       <p><span class="price text-normal">￥138.00</span></p>
+                                   </div>
+                                   <div class="col-md-3 col-sm-12">
+                                       <img src="../theme/img/pd/hot2.png" alt=""/>
+                                       <p class="text-normal">
+                                           <img src="../theme/icon/y1.png" alt=""/>
+                                           <a href="#">小米 4 2GB内存版 白色 移动4G手机不锈钢金属边框、 5英寸屏窄边，工艺和手感</a> </p>
+                                       <p><span class="price text-normal">￥138.00</span></p>
+                                   </div>
+                               </div>
+                               <div class="row p-3">
+                                   <div class="col-md-3 col-sm-12">
+                                       <img src="../theme/img/pd/hot2.png" alt=""/>
+                                       <p class="text-normal">
+                                           <img src="../theme/icon/y2.png" alt=""/>
+                                           <a href="#">小米 4 2GB内存版 白色 移动4G手机不锈钢金属边框、 5英寸屏窄边，工艺和手感</a> </p>
+                                       <p><span class="price text-normal">￥138.00</span></p>
+                                   </div>
+                                   <div class="col-md-3 col-sm-12">
+                                       <img src="../theme/img/pd/hot2.png" alt=""/>
+                                       <p class="text-normal">
+                                           <img src="../theme/icon/y1.png" alt=""/>
+                                           <a href="#">小米 4 2GB内存版 白色 移动4G手机不锈钢金属边框、 5英寸屏窄边，工艺和手感</a> </p>
+                                       <p><span class="price text-normal">￥138.00</span></p>
+                                   </div>
+                                   <div class="col-md-3 col-sm-12">
+                                       <img src="../theme/img/pd/hot2.png" alt=""/>
+                                       <p class="text-normal">
+                                           <img src="../theme/icon/y1.png" alt=""/>
+                                           <a href="#">小米 4 2GB内存版 白色 移动4G手机不锈钢金属边框、 5英寸屏窄边，工艺和手感</a> </p>
+                                       <p><span class="price text-normal">￥138.00</span></p>
+                                   </div>
+                                   <div class="col-md-3 col-sm-12">
+                                       <img src="../theme/img/pd/hot2.png" alt=""/>
+                                       <p class="text-normal">
+                                           <img src="../theme/icon/y1.png" alt=""/>
+                                           <a href="#">小米 4 2GB内存版 白色 移动4G手机不锈钢金属边框、 5英寸屏窄边，工艺和手感</a> </p>
+                                       <p><span class="price text-normal">￥138.00</span></p>
+                                   </div>
+                               </div>
+                                   <ul class="pagination fr m-3">
+                                       <li class="page-item active mx-1">
+                                           <a class="page-link" href="#">1</a>
+                                       </li>
+                                       <li class="page-item mx-1">
+                                           <a class="page-link" href="#">2</a>
+                                       </li>
+                                       <li class="page-item mx-1">
+                                           <a class="page-link" href="#">3</a>
+                                       </li>
+                                       <li class="page-item mx-1">
+                                           <a class="page-link" href="#">4</a>
+                                       </li>
+                                       <li class="page-item mx-1">
+                                           <a class="page-link" href="#">5</a>
+                                       </li>
+                                       <li class="page-item mx-1">
+                                           <a class="page-link" href="#">......</a>
+                                       </li>
+                                       <li class="page-item mx-1">
+                                           <a class="page-link" href="#">100</a>
+                                       </li>
+                                       <li class="page-item ml-1">
+                                           <a class="page-link" href="#">下一页</a>
+                                       </li>
+                                   </ul>
+                           </div>
+                           <div id="tab2" class="tab-pane">
+                               <div class="row p-2">
+                                   <div class="col-md-2 col-sm-12   mt-2">
+                                       <img src="../theme/icon/y2.png" alt=""/>
+                                       <span class="my_small">全选</span>
+                                   </div>
+                                   <div class="col-md-2 col-sm-12">
+                                       <a href="#" class="btn btn-secondary my_small">删除商品</a>
+                                   </div>
+                                   <div class="col-md-8 col-sm-12"></div>
+                               </div>
+                               <div class="row mt-1 t-list1 p-5  border-0">
+                               <div class="col-md-2 col-sm-12 p-0   ">
+                                   <div class="text-center" >
+                                   <img src="../theme/icon/shop-ll.png" alt=""/>
+                                   <p>秋水伊人官方旗舰店</p>
+                                   <p class="d-flex align-items-center justify-content-center"><a href="#" class="member-shops">进入店铺</a> </p>
+                                   <p>关注人气：1000+</p>
+                                   <p>收藏时间：2014-11-21</p></div>
+                               </div>
+                               <div class="col-md-2 col-sm-12 p-0">
+                                   <div class="row ">
+                                       <div class="col-md-2 col-sm-12 p-0 mt-5">
+                                   <img src="../theme/icon/m-fl.png" alt=""/></div>
+                                       <div class="col-md-10 col-sm-12 p-0">
+                                   <img src="../theme/img/pd/m3.png" alt=""/>
+                                   <p class="price ml-4">￥78.00</p></div>
+                                   </div>
+                               </div>
+                               <div class="col-md-2 col-sm-12 p-0">
+                                   <img src="../theme/img/pd/m4.png" alt=""/>
+                                   <p class="price ml-4">￥78.00</p>
+                               </div>
+
+                               <div class="col-md-2 col-sm-12 p-0">
+                                   <img src="../theme/img/pd/m5.png" alt=""/>
+                                   <p class="price ml-4">￥78.00</p>
+                               </div>
+                                   <div class="col-md-2 col-sm-12">
+                                       <div class="row ">
+                                           <div class="col-md-8 col-sm-12 p-0">
+                                              <img src="../theme/img/pd/m3.png" alt=""/>
+                                               <p class="price ml-4">￥78.00</p>
+                                           </div>
+                                           <div class="col-md-2 col-sm-12 p-0 mt-5">
+                                               <img src="../theme/icon/m-fr.png" alt=""/>
+                                           </div>
+                                   </div>
+                               </div>
+                           </div>
+                               <div class="row mt-1 t-list1 p-5 border-0 ">
+                                   <div class="col-md-2 col-sm-12 p-0   ">
+                                       <div class="text-center" >
+                                           <img src="../theme/icon/shop-ll.png" alt=""/>
+                                           <p>秋水伊人官方旗舰店</p>
+                                           <p class="d-flex align-items-center justify-content-center"><a href="#" class="member-shops">进入店铺</a> </p>
+                                           <p>关注人气：1000+</p>
+                                           <p>收藏时间：2014-11-21</p></div>
+                                   </div>
+                                   <div class="col-md-2 col-sm-12 p-0">
+                                       <div class="row ">
+                                           <div class="col-md-2 col-sm-12 p-0 mt-5">
+                                               <img src="../theme/icon/m-fl.png" alt=""/></div>
+                                           <div class="col-md-10 col-sm-12 p-0">
+                                               <img src="../theme/img/pd/m3.png" alt=""/>
+                                               <p class="price ml-4">￥78.00</p></div>
+                                       </div>
+                                   </div>
+                                   <div class="col-md-2 col-sm-12 p-0">
+                                      <img src="../theme/img/pd/m4.png" alt=""/>
+                                       <p class="price ml-4">￥78.00</p>
+                                   </div>
+
+                                   <div class="col-md-2 col-sm-12 p-0">
+                                      <img src="../theme/img/pd/m5.png" alt=""/>
+                                       <p class="price ml-4">￥78.00</p>
+                                   </div>
+                                   <div class="col-md-2 col-sm-12 p-0">
+                                       <div class="row ">
+                                           <div class="col-md-8 col-sm-12 p-0">
+                                              <img src="../theme/img/pd/m3.png" alt=""/>
+                                               <p class="price ml-4">￥78.00</p>
+                                           </div>
+                                           <div class="col-md-2 col-sm-12 p-0 mt-5">
+                                               <img src="../theme/icon/m-fr.png" alt=""/>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <ul class="pagination fr m-3">
+                                   <li class="page-item active mx-1">
+                                       <a class="page-link" href="#">1</a>
+                                   </li>
+                                   <li class="page-item mx-1">
+                                       <a class="page-link" href="#">2</a>
+                                   </li>
+                                   <li class="page-item mx-1">
+                                       <a class="page-link" href="#">3</a>
+                                   </li>
+                                   <li class="page-item mx-1">
+                                       <a class="page-link" href="#">4</a>
+                                   </li>
+                                   <li class="page-item mx-1">
+                                       <a class="page-link" href="#">5</a>
+                                   </li>
+                                   <li class="page-item mx-1">
+                                       <a class="page-link" href="#">......</a>
+                                   </li>
+                                   <li class="page-item mx-1">
+                                       <a class="page-link" href="#">100</a>
+                                   </li>
+                                   <li class="page-item ml-1">
+                                       <a class="page-link" href="#">下一页</a>
+                                   </li>
+                               </ul>
+                           </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!--尾页-->
+<footer>
+    <iframe class="my_footer w-100" src="footer.html" frameborder="0" scrolling="0"></iframe>
+</div>
+</footer>
+</body>
+</html>

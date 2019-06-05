@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- 设置视口-->
+    <meta name="viewport" content="width=device-width,inital-scale=1"/>
+    <!-- 导入css-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/basic.css"/>
+    <!-- 导入js-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container p-0">
+    <header>
+        <div class="BHeader">
+            <div class="yNavIndex ">
+                <ul class="breadcrumb   my_bg">
+                    <li class="breadcrumb-item">
+                        <a href="wai_login.html" style="color:#ea4949;">请登录</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="wai_reg.html">免费注册</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="wai_dd.html">订单查询</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="my_sc.html">我的收藏</a>
+                    </li>
+                    <div class="dropdown">
+                        <!-- boot中通过自定义属性data-toggle来激活-->
+                        <button class="btn my_bg my_small border-0 dropdown-toggle" data-toggle="dropdown">我的商城</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="wai_dd.html">我的订单</a></li>
+                            <li><a href="my_sc.html">我的收藏</a></li>
+                            <li><a href="#">账户安全</a></li>
+                            <li><a href="#">地址管理</a></li>
+                            <li><a href="#">我要评价</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container row  m-0  ">
+        <div class="header-logo f1 col-md-3 col-sm-12 p-0">
+            <h1>
+                <a href="wai_index.html">
+                    <img src="../theme/icon/logo.png" alt=""/>
+                    <a class="my_small" href="wai_index.html">返回首页</a>
+                </a>
+            </h1>
+        </div>
+        <div class="head-form fl col-md-7 col-sm-12 ml-5">
+            <div class="input-group w-100">
+                <input class="form-control p-0 border-danger in1" type="text" placeholder="请输入您要搜索的内容"/>
+                <a href="wai_class.html"><button class="button">搜索</button></a>
+            </div>
+            <div class="words-text  mt-2">
+                <a href="#" class="red">1元秒爆</a>
+                <a href="#">低至五折</a>
+                <a href="#">农用物资</a>
+                <a href="#">买一赠一</a>
+                <a href="#">佳能相机</a>
+                <a href="#">稻香村月饼</a>
+                <a href="#">服装城</a>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-12"></div>
+    </div>
+    <div class="containers ">
+        <div class="row">
+            <div class="col-md-2 col-sm-12">
+                <div class="sc_left">
+                    <p>手机悦商城</p>
+                    <div class="sc_member clearfix border border-secondary">
+                        <div class="row mx-0  p-2">
+                            <div class="col-md-5 col-sm-12 p-0">
+                                <img src="../theme/img/bg/mem.png" alt=""/>
+                            </div>
+                            <div class="col-md-7 col-sm-12 ">
+                                <p>用户名:</p>
+                                <a href="#">郁骨</a>
+                                <p>搜悦号:</p>
+                                <p>389323080</p>
+                            </div>
+                        </div>
+                        <h6 class="my_bg p-2">我的商城</h6>
+                        <p class="lp"><a href="#">我的订单</a></p>
+                        <p class="lp"><a href="#">我的收藏</a></p>
+                        <p class="lp"><a href="#">账号安全</a></p>
+                        <p class="lp"><a href="#">我的评价</a></p>
+                        <p class="lp"><a href="#">地址管理</a></p>
+                        <h6 class="my_bg p-2">客户服务</h6>
+                        <p class="lp"><a href="#">退货服务</a></p>
+                        <p class="lp"><a href="#">退货/退款记录</a></p>
+                        <h6 class="my_bg p-2">我的消息</h6>
+                        <p class="lp"><a href="#">商城快讯</a></p>
+                        <p class="lp"><a href="#">帮助中心</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 con-sm-12 mt-2 ">
+                <div class="cs_content">
+                    <div class="member-head ">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-12 ">
+                                <h4 class="text-white">我的订单</h4>
+                            </div>
+                            <div class="col-md-5 col-sm-12"></div>
+                            <div class="col-md-3 col-sm-12">
+                                <input type="text" class="w-75" placeholder="商品名称/商品编号/订单编号"/>
+                            </div>
+                            <div class="col-md-2 col-sm-12">
+                                <img src="../theme/icon/member-s.png" alt=""/>
+                                <a class="search text-white" href="#">搜索</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container pt-0">
+                        <ul class="nav nav-tabs ">
+                            <li class="nav-item "><a class=" nav-link text-normal" href="#tab1" data-toggle="tab">我的订单</a></li>
+                            <li class="nav-item "><a class=" nav-link text-normal" href="#tab2" data-toggle="tab">待付款（44）</a></li>
+                            <li class="nav-item "><a class=" nav-link text-normal" href="#tab3" data-toggle="tab">待发货</a></li>
+                            <li class="nav-item "><a class=" nav-link text-normal" href="#tab3" data-toggle="tab">待发货</a></li>
+                            <li class="nav-item "><a class=" nav-link text-normal" href="#tab4" data-toggle="tab">交易完成</a></li>
+                            <li class="nav-item "><a class=" nav-link text-normal" href="#tab5" data-toggle="tab">订单信息</a></li>
+                        </ul>
+                        <!--   下层内容-->
+                        <div class="tab-content border  border-secondary clearfix">
+                            <div id="tab1" class="tab-pane active">
+                                <div class="row p-2 text-center">
+                                    <div class="col-md-6 col-sm-12   mt-2">
+                                        订单信息
+                                    </div>
+                                    <div class="col-md-1 col-sm-12 p-0">
+                                     收货人
+                                    </div>
+                                    <div class="col-md-1 col-sm-12 p-0">
+                                      订单金额
+                                    </div>
+                                    <div class="col-md-1 col-sm-12 p-0">
+                                        订单时间
+                                    </div>
+                                    <div class="col-md-1 col-sm-12 p-0">
+                                        订单状态
+                                    </div>
+                                    <div class="col-md-2 col-sm-12 p-0">
+                                        订单操作
+                                    </div>
+                                </div>
+                                <div class="row ml-2">
+                                    <div class="col-3 border border-secondary">
+                                        <span class="text-normal text-muted">
+                                            2015-9-22 18:22:33
+                                        </span>
+                                    </div>
+                                    <div class="col-3 border border-secondary">
+                                        <span class="text-normal text-muted">
+                                            订单号：
+                                        </span>
+                                        <span class="text-normal">98653056821</span>
+                                    </div>
+                                    <div class="col-2 border border-secondary">
+                                        <span class="text-normal text-muted">以纯甲醇旗舰店</span>
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-3 ">
+                                        <span class="text-muted text-normal">客服电话:</span>
+                                        <span class="text-normal">010-6544-0986</span>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-md-5 col-sm-12">
+                                        <div class="row m-0">
+                                        <div class="col-md-3 col-sm-12">
+                                            <a href="#"><img src="../theme/img/pd/m1.png" alt=""/></a>
+                                        </div>
+                                        <div class="col-md-8 col-sm-12 p-0">
+                                            <a href="#">红米note2 标准版 白色 移动4G手机 双开双待</a>
+                                        </div>
+                                        <div class="col-md-1 col-sm-12 p-0 mt-4">x1</div>
+                                    </div>
+                                        <div class="row m-0 mt-4">
+                                            <div class="col-md-3 col-sm-12">
+                                                <a href="#"><img src="../theme/img/pd/m2.png" alt=""/></a>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 p-0">
+                                                <a href="#">AXON天机mini NBA限量版</a>
+                                            </div>
+                                            <div class="col-md-1 col-sm-12 p-0 mt-4">x9</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+
+                                            <div class="row mt-4">
+                                                <div class="col-md-2 col-sm-12">
+                                                    张子琪 <img src="../theme/icon/member-u.png" alt=""/>
+                                                </div>
+                                                <div class="col-md-2 col-sm-12">
+                                                    <p class="py-1">￥120.00</p>
+                                                    <p class="py-1">货到付款</p>
+                                                    <p><img src="../theme/icon/member-ip.png" alt=""/></p>
+                                                </div>
+                                                <div class="col-md-2 col-sm-12">
+                                                    2015-09-22
+                                                </div>
+                                                <div class="col-md-3 col-sm-12">
+                                                    <p>等待付款</p>
+                                                    <p class="py-1"><a href="#" class="text-danger">物流跟踪</a></p>
+                                                    <p class="py-1"><a href="#" class="text-danger">订单详情</a></p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-12 p-0 ">
+                                                    <p>剩余15时20分</p>
+                                                    <p class="py-1">
+                                                        <a href="#" class="my_small btn btn-light ">立即支付</a>
+                                                    </p>
+                                                    <p class="py-1 ">
+                                                        <a href="#" class="text-danger ml-3">取消订单</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="row ml-4 mt-4 w-100">
+                                        <div class="col-3 border border-secondary">
+                                        <span class="text-normal text-muted">
+                                            2015-9-22 18:22:33
+                                        </span>
+                                        </div>
+                                        <div class="col-3 border border-secondary">
+                                        <span class="text-normal text-muted">
+                                            订单号：
+                                        </span>
+                                            <span class="text-normal">98653056821</span>
+                                        </div>
+                                        <div class="col-2 border border-secondary">
+                                            <span class="text-normal text-muted">以纯甲醇旗舰店</span>
+                                        </div>
+                                        <div class="col-1 p-0"></div>
+                                        <div class="col-3 ">
+                                            <span class="text-muted text-normal">客服电话:</span>
+                                            <span class="text-normal">010-6544-0986</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-12">
+                                        <div class="row m-0 mt-2">
+                                            <div class="col-md-3 col-sm-12">
+                                                <a href="#"><img src="../theme/img/pd/m1.png" alt=""/></a>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 p-0">
+                                                <a href="#">红米note2 标准版 白色 移动4G手机 双开双待</a>
+                                            </div>
+                                            <div class="col-md-1 col-sm-12 p-0 mt-4">x1</div>
+                                        </div>
+                                        <div class="row m-0 mt-4">
+                                            <div class="col-md-3 col-sm-12">
+                                                <a href="#"><img src="../theme/img/pd/m2.png" alt=""/></a>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 p-0">
+                                                <a href="#">AXON天机mini NBA限量版</a>
+                                            </div>
+                                            <div class="col-md-1 col-sm-12 p-0 mt-4">x9</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <div class="row mt-4">
+                                            <div class="col-md-2 col-sm-12">
+                                                张子琪 <img src="../theme/icon/member-u.png" alt=""/>
+                                            </div>
+                                            <div class="col-md-2 col-sm-12">
+                                                <p class="py-1">￥120.00</p>
+                                                <p class="py-1">货到付款</p>
+                                                <p><img src="../theme/icon/member-ip.png" alt=""/></p>
+                                            </div>
+                                            <div class="col-md-2 col-sm-12">
+                                                2015-09-22
+                                            </div>
+                                            <div class="col-md-3 col-sm-12">
+                                                <p>等待付款</p>
+                                                <p class="py-1"><a href="#" class="text-danger">物流跟踪</a></p>
+                                                <p class="py-1"><a href="#" class="text-danger">订单详情</a></p>
+                                            </div>
+                                            <div class="col-md-3 col-sm-12 p-0 ">
+                                                <p>剩余15时20分</p>
+                                                <p class="py-1">
+                                                    <a href="#" class="my_small btn btn-light ">立即支付</a>
+                                                </p>
+                                                <p class="py-1 ">
+                                                    <a href="#" class="text-danger ml-3">取消订单</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-4 mt-4 w-100">
+                                        <div class="col-3 border border-secondary">
+                                        <span class="text-normal text-muted">
+                                            2015-9-22 18:22:33
+                                        </span>
+                                        </div>
+                                        <div class="col-3 border border-secondary">
+                                        <span class="text-normal text-muted">
+                                            订单号：
+                                        </span>
+                                            <span class="text-normal">98653056821</span>
+                                        </div>
+                                        <div class="col-2 border border-secondary">
+                                            <span class="text-normal text-muted">以纯甲醇旗舰店</span>
+                                        </div>
+                                        <div class="col-1 p-0"></div>
+                                        <div class="col-3 ">
+                                            <span class="text-muted text-normal">客服电话:</span>
+                                            <span class="text-normal">010-6544-0986</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-12">
+                                        <div class="row m-0 mt-2">
+                                            <div class="col-md-3 col-sm-12">
+                                                <a href="#"><img src="../theme/img/pd/m1.png" alt=""/></a>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 p-0">
+                                                <a href="#">红米note2 标准版 白色 移动4G手机 双开双待</a>
+                                            </div>
+                                            <div class="col-md-1 col-sm-12 p-0 mt-4">x1</div>
+                                        </div>
+                                        <div class="row m-0 mt-4">
+                                            <div class="col-md-3 col-sm-12">
+                                                <a href="#"><img src="../theme/img/pd/m2.png" alt=""/></a>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 p-0">
+                                                <a href="#">AXON天机mini NBA限量版</a>
+                                            </div>
+                                            <div class="col-md-1 col-sm-12 p-0 mt-4">x9</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <div class="row mt-4">
+                                            <div class="col-md-2 col-sm-12">
+                                                张子琪 <img src="../theme/icon/member-u.png" alt=""/>
+                                            </div>
+                                            <div class="col-md-2 col-sm-12">
+                                                <p class="py-1">￥120.00</p>
+                                                <p class="py-1">货到付款</p>
+                                                <p><img src="../theme/icon/member-ip.png" alt=""/></p>
+                                            </div>
+                                            <div class="col-md-2 col-sm-12">
+                                                2015-09-22
+                                            </div>
+                                            <div class="col-md-3 col-sm-12">
+                                                <p>等待付款</p>
+                                                <p class="py-1"><a href="#" class="text-danger">物流跟踪</a></p>
+                                                <p class="py-1"><a href="#" class="text-danger">订单详情</a></p>
+                                            </div>
+                                            <div class="col-md-3 col-sm-12 p-0 ">
+                                                <p>剩余15时20分</p>
+                                                <p class="py-1">
+                                                    <a href="#" class="my_small btn btn-light ">立即支付</a>
+                                                </p>
+                                               <p class="py-1 ">
+                                                   <a href="#" class="text-danger ml-3">取消订单</a>
+                                               </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="pagination fr m-3">
+                                    <li class="page-item active mx-1">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">......</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">100</a>
+                                    </li>
+                                    <li class="page-item ml-1">
+                                        <a class="page-link" href="#">下一页</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab2" class="tab-pane">
+                                <div class="row p-2 text-center">
+                                    <div class="col-md-6 col-sm-12   mt-2">
+                                        订单信息
+                                    </div>
+                                    <div class="col-md-1 col-sm-12 p-0">
+                                        收货人
+                                    </div>
+                                    <div class="col-md-1 col-sm-12 p-0">
+                                        订单金额
+                                    </div>
+                                    <div class="col-md-1 col-sm-12 p-0">
+                                        订单时间
+                                    </div>
+                                    <div class="col-md-1 col-sm-12 p-0">
+                                        订单状态
+                                    </div>
+                                    <div class="col-md-2 col-sm-12 p-0">
+                                        订单操作
+                                    </div>
+                                </div>
+                                <div class="row ml-2">
+                                    <div class="col-3 border border-secondary">
+                                        <span class="text-normal text-muted">
+                                            2015-9-22 18:22:33
+                                        </span>
+                                    </div>
+                                    <div class="col-3 border border-secondary">
+                                        <span class="text-normal text-muted">
+                                            订单号：
+                                        </span>
+                                        <span class="text-normal">98653056821</span>
+                                    </div>
+                                    <div class="col-2 border border-secondary">
+                                        <span class="text-normal text-muted">以纯甲醇旗舰店</span>
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-3 ">
+                                        <span class="text-muted text-normal">客服电话:</span>
+                                        <span class="text-normal">010-6544-0986</span>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-md-5 col-sm-12">
+                                        <div class="row m-0">
+                                            <div class="col-md-3 col-sm-12">
+                                                <a href="#"><img src="../theme/img/pd/m1.png" alt=""/></a>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 p-0">
+                                                <a href="#">红米note2 标准版 白色 移动4G手机 双开双待</a>
+                                            </div>
+                                            <div class="col-md-1 col-sm-12 p-0 mt-4">x1</div>
+                                        </div>
+                                        <div class="row m-0 mt-4">
+                                            <div class="col-md-3 col-sm-12">
+                                                <a href="#"><img src="../theme/img/pd/m2.png" alt=""/></a>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 p-0">
+                                                <a href="#">AXON天机mini NBA限量版</a>
+                                            </div>
+                                            <div class="col-md-1 col-sm-12 p-0 mt-4">x9</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+
+                                        <div class="row mt-4">
+                                            <div class="col-md-2 col-sm-12">
+                                                张子琪 <img src="../theme/icon/member-u.png" alt=""/>
+                                            </div>
+                                            <div class="col-md-2 col-sm-12">
+                                                <p class="py-1">￥120.00</p>
+                                                <p class="py-1">货到付款</p>
+                                                <p><img src="../theme/icon/member-ip.png" alt=""/></p>
+                                            </div>
+                                            <div class="col-md-2 col-sm-12">
+                                                2015-09-22
+                                            </div>
+                                            <div class="col-md-3 col-sm-12">
+                                                <p>已申请退货</p>
+                                                <p class="py-1"><a href="#" class="text-danger">退货日志</a></p>
+                                            </div>
+                                            <div class="col-md-3 col-sm-12 p-0 ">
+                                                <a href="#" class="btn btn-light my_small">取消退货</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-4 mt-4 w-100">
+                                        <div class="col-3 border border-secondary">
+                                        <span class="text-normal text-muted">
+                                            2015-9-22 18:22:33
+                                        </span>
+                                        </div>
+                                        <div class="col-3 border border-secondary">
+                                        <span class="text-normal text-muted">
+                                            订单号：
+                                        </span>
+                                            <span class="text-normal">98653056821</span>
+                                        </div>
+                                        <div class="col-2 border border-secondary">
+                                            <span class="text-normal text-muted">以纯甲醇旗舰店</span>
+                                        </div>
+                                        <div class="col-1 p-0"></div>
+                                        <div class="col-3 ">
+                                            <span class="text-muted text-normal">客服电话:</span>
+                                            <span class="text-normal">010-6544-0986</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-12">
+                                        <div class="row m-0 mt-2">
+                                            <div class="col-md-3 col-sm-12">
+                                                <a href="#"><img src="../theme/img/pd/m1.png" alt=""/></a>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 p-0">
+                                                <a href="#">红米note2 标准版 白色 移动4G手机 双开双待</a>
+                                            </div>
+                                            <div class="col-md-1 col-sm-12 p-0 mt-4">x1</div>
+                                        </div>
+                                        <div class="row m-0 mt-4">
+                                            <div class="col-md-3 col-sm-12">
+                                                <a href="#"><img src="../theme/img/pd/m2.png" alt=""/></a>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 p-0">
+                                                <a href="#">AXON天机mini NBA限量版</a>
+                                            </div>
+                                            <div class="col-md-1 col-sm-12 p-0 mt-4">x9</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <div class="row mt-4">
+                                            <div class="col-md-2 col-sm-12">
+                                                张子琪 <img src="../theme/icon/member-u.png" alt=""/>
+                                            </div>
+                                            <div class="col-md-2 col-sm-12">
+                                                <p class="py-1">￥120.00</p>
+                                                <p class="py-1">货到付款</p>
+                                                <p><img src="../theme/icon/member-ip.png" alt=""/></p>
+                                            </div>
+                                            <div class="col-md-2 col-sm-12">
+                                                2015-09-22
+                                            </div>
+                                            <div class="col-md-3 col-sm-12">
+                                                <p>已申请退货</p>
+                                                <p class="py-1"><a href="#" class="text-danger">退货日志</a></p>
+                                            </div>
+                                            <div class="col-md-3 col-sm-12 p-0 ">
+                                                <a href="#" class="btn btn-light my_small">取消退货</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-4 mt-4 w-100">
+                                        <div class="col-3 border border-secondary">
+                                        <span class="text-normal text-muted">
+                                            2015-9-22 18:22:33
+                                        </span>
+                                        </div>
+                                        <div class="col-3 border border-secondary">
+                                        <span class="text-normal text-muted">
+                                            订单号：
+                                        </span>
+                                            <span class="text-normal">98653056821</span>
+                                        </div>
+                                        <div class="col-2 border border-secondary">
+                                            <span class="text-normal text-muted">以纯甲醇旗舰店</span>
+                                        </div>
+                                        <div class="col-1 p-0"></div>
+                                        <div class="col-3 ">
+                                            <span class="text-muted text-normal">客服电话:</span>
+                                            <span class="text-normal">010-6544-0986</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-12">
+                                        <div class="row m-0 mt-2">
+                                            <div class="col-md-3 col-sm-12">
+                                                <a href="#"><img src="../theme/img/pd/m1.png" alt=""/></a>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 p-0">
+                                                <a href="#">红米note2 标准版 白色 移动4G手机 双开双待</a>
+                                            </div>
+                                            <div class="col-md-1 col-sm-12 p-0 mt-4">x1</div>
+                                        </div>
+                                        <div class="row m-0 mt-4">
+                                            <div class="col-md-3 col-sm-12">
+                                                <a href="#"><img src="../theme/img/pd/m2.png" alt=""/></a>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 p-0">
+                                                <a href="#">AXON天机mini NBA限量版</a>
+                                            </div>
+                                            <div class="col-md-1 col-sm-12 p-0 mt-4">x9</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <div class="row mt-4">
+                                            <div class="col-md-2 col-sm-12">
+                                                张子琪 <img src="../theme/icon/member-u.png" alt=""/>
+                                            </div>
+                                            <div class="col-md-2 col-sm-12">
+                                                <p class="py-1">￥120.00</p>
+                                                <p class="py-1">货到付款</p>
+                                                <p><img src="../theme/icon/member-ip.png" alt=""/></p>
+                                            </div>
+                                            <div class="col-md-2 col-sm-12">
+                                                2015-09-22
+                                            </div>
+                                            <div class="col-md-3 col-sm-12">
+                                                <p>已申请退货</p>
+                                                <p class="py-1"><a href="#" class="text-danger">退货日志</a></p>
+                                            </div>
+                                            <div class="col-md-3 col-sm-12 p-0 ">
+                                                <a href="#" class="btn btn-light my_small">取消退货</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="pagination fr m-3">
+                                    <li class="page-item active mx-1">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">......</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">100</a>
+                                    </li>
+                                    <li class="page-item ml-1">
+                                        <a class="page-link" href="#">下一页</a>
+                                    </li>
+                                </ul>
+                                </div>
+                                     <div id="tab3" class="tab-pane">
+                                         <h4>待发货</h4>
+                                         <ul class="pagination fr m-3">
+                                             <li class="page-item active mx-1">
+                                                 <a class="page-link" href="#">1</a>
+                                             </li>
+                                             <li class="page-item mx-1">
+                                                 <a class="page-link" href="#">2</a>
+                                             </li>
+                                             <li class="page-item mx-1">
+                                                 <a class="page-link" href="#">3</a>
+                                             </li>
+                                             <li class="page-item mx-1">
+                                                 <a class="page-link" href="#">4</a>
+                                             </li>
+                                             <li class="page-item mx-1">
+                                                 <a class="page-link" href="#">5</a>
+                                             </li>
+                                             <li class="page-item mx-1">
+                                                 <a class="page-link" href="#">......</a>
+                                             </li>
+                                             <li class="page-item mx-1">
+                                                 <a class="page-link" href="#">100</a>
+                                             </li>
+                                             <li class="page-item ml-1">
+                                                 <a class="page-link" href="#">下一页</a>
+                                             </li>
+                                         </ul>
+                                     </div>
+                            <div id="tab3" class="tab-pane">
+                                <h4>待发货</h4>
+                                <ul class="pagination fr m-3">
+                                    <li class="page-item active mx-1">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">......</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">100</a>
+                                    </li>
+                                    <li class="page-item ml-1">
+                                        <a class="page-link" href="#">下一页</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab4" class="tab-pane">
+                                <h4>交易完成</h4>
+                                <ul class="pagination fr m-3">
+                                    <li class="page-item active mx-1">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">......</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">100</a>
+                                    </li>
+                                    <li class="page-item ml-1">
+                                        <a class="page-link" href="#">下一页</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab5" class="tab-pane">
+                                <h4>订单信息</h4>
+                                <ul class="pagination fr m-3">
+                                    <li class="page-item active mx-1">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">......</a>
+                                    </li>
+                                    <li class="page-item mx-1">
+                                        <a class="page-link" href="#">100</a>
+                                    </li>
+                                    <li class="page-item ml-1">
+                                        <a class="page-link" href="#">下一页</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--尾页-->
+<footer class="mt-5 ">
+    <iframe class="my_footer" src="footer.html" frameborder="0" scrolling="0"></iframe>
+</footer></div>
+</body>
+</html>

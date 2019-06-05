@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- 设置视口-->
+    <meta name="viewport" content="width=device-width,inital-scale=1"/>
+    <!-- 导入css-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/basic.css"/>
+
+    <!-- 导入js-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<!--登录-->
+<div class="container log">
+    <div class="row">
+        <div class="col-sm-6">
+            <a href="wai_index.html"><img src="../theme/icon/logo.png" alt=""/>返回首页</a>
+        </div>
+        <div class="col-sm-6 mt-4 ">
+            <img src="../theme/login/msg.png" alt=""/>
+
+            <a class="log-a" href="#">登录页面。改进意见</a>
+        </div>
+    </div>
+</div>
+<!--登录1-->
+<div class="log-banner w-100  ">
+    <div class="log-form fr">
+    <ul class="nav nav-tabs nav-justified">
+        <li class="nav-item "><a class=" nav-link text-normal " href="#tab1" data-toggle="tab">扫码登录</a></li>
+        <li class="nav-item "><a class=" nav-link text-normal" href="#tab2" data-toggle="tab">账号登陆</a></li>
+    </ul>
+
+    <!--  下层内容-->
+    <div class="tab-content">
+        <div id="tab1" class="tab-pane">
+            <div class="row py-4 mx-0">
+                <div class="col-3"></div>
+                <div class="col-6 p-0">
+                    <img class="border border-secondary p-1"  src="../theme/login/code.png" alt=""/>
+                    <p>打开<a href="#">歪秀购物</a>&nbsp;&nbsp;&nbsp;扫一扫登录</p>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <a class="fr text-danger" href="wai_reg.html">立即注册</a>
+        </div>
+        <div id="tab2" class="tab-pane active">
+            <div class="kong"></div>
+           <div class="row px-3 py-2">
+             <div class="col-md-2 col-sm-12">
+                 <img  src="../theme/img/ad/user.png" alt="div"/>
+             </div>
+               <div class="col-md-10 col-sm-12 pl-0">
+                   <input class="log-input-p w-100"  type="text" placeholder="邮箱/用户名/手机号"/>
+               </div>
+           </div>
+            <div class="row px-3 py-2">
+                <div class="col-md-2 col-sm-12">
+                    <img  src="../theme/img/ad/mima.png" alt="div"/>
+                </div>
+                <div class="col-md-10 col-sm-12 pl-0">
+                    <input class="log-input-p w-100"  type="text" placeholder="密码"/>
+                </div>
+            </div>
+            <div class="row ml-2 mt-2">
+                <div class="col-md-4 col-sm-12">
+                    <input type="checkbox"  id="zddl"/>
+                    <span>自动登录</span>
+                </div>
+                <div class="col-md-5 col-sm-12"></div>
+                <div class="col-md-3 col-sm-12 px-1">
+                    <a href="#">忘记密码</a>
+                </div>
+            </div>
+            <div class="mt-4 d-flex align-items-center justify-content-center"> <a href="#" class="btn btn-danger w-75">登录</a>
+            </div>
+            <div class="fr p-3"><a href="wai_reg.html">立即注册</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<!--尾页-->
+<div class="log-foot text-center">
+    <div class="row ">
+        <div class="col-2"></div>
+        <div class="col-md-8 col-sm-12 p-0">
+            <ul class="breadcrumb bg-white">
+                <li class="breadcrumb-item">
+                    <a href="">关于我们</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="">联系我们</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="">人才招聘</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="">商家入驻</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="">广告服务</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="">手机京东</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="">友情连接</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="">销售联盟</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="">English site</a>
+                </li>
+            </ul>
+        </div>
+       <div class="col-2"></div>
+    </div>
+    <p>网络文化经营许可证：浙网文[2013]0268-027号|增值电信业务经营许可证：浙B2-20080224-1</p>
+    <p>信息网络传播视听节目许可证：1109364号 | 互联网违法和不良信息举报电话:0571-81683755</p>
+</div>
+</div>
+</body>
+</html>
