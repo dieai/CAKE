@@ -47,11 +47,11 @@ em {font-style:normal;}
 }
 @media screen and (min-width:992px){
     .my_header{height:10rem;}
-    .my_footer{height:35rem;}
+    .my_footer{height:30rem;}
 }
 @media screen and (max-width:991px){
     .my_header{height:16rem;}
-    .my_footer{height:40rem;}
+    .my_footer{height:35rem;}
 }
 .price {color:#ea4949; font-size:1rem;}
 .header-logo  { width:322px;}
@@ -146,11 +146,21 @@ color:#ff0000 !important;
     border:3px solid red;
 
 }
+.reg-bg{
+    width:100%;
+    height:500px;
+    background:url("../img/bg/5792dc799b578.jpg") no-repeat;
+    background-size: cover;
+}
 .kongbai{
     height:80px;
 }
-.reg-content{
+.reg-text{
     font-size:15px;
+}
+.reg-content{
+    width:576px;
+    background-color:rgba(0,0,0,0.1);
 }
 .item-info{
 padding:30px;
@@ -348,7 +358,9 @@ padding:30px;
 .pag-link:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
-
+.pag-item .pag-link img{
+    width:35px;height:35px;
+}
 .pag-item:first-child .pag-link {
     margin-left: 0;
     border-top-left-radius: 0.25rem;
@@ -406,5 +418,9 @@ padding:30px;
 .pagination-sm .page-item:last-child .page-link {
     border-top-right-radius: 0.2rem;
     border-bottom-right-radius: 0.2rem;
+}
+.jh_img{
+    width:46px;
+    height:46px;
 }
 
